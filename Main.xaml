@@ -1,0 +1,817 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1794,1072" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="34">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="706,967" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart sap:VirtualizedContainerService.HintSize="664,895" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+      <Flowchart.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="pageKitalulus" />
+        <Variable x:TypeArguments="x:Boolean" Name="popDialog" />
+      </Flowchart.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+          <av:Size x:Key="ShapeSize">60,75</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">330,40 500,40 500,47</av:PointCollection>
+          <x:Double x:Key="Width">630</x:Double>
+          <x:Double x:Key="Height">859</x:Double>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID8</x:Reference>
+      </Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID0">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">200,147</av:Point>
+            <av:Size x:Key="ShapeSize">200,66</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300,213 300,243 290,243 290,266.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="Cek Web Exist" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Info'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="8247505d2d68453fef083c953157da91" Selector="&lt;html app='chrome.exe' title='*Kitalulus' /&gt;">
+            <ui:BrowserScope.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:UiElementExists DisplayName="Element Exists 'Intermediate D3D Window'" Exists="[pageKitalulus]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="877664bc-518c-487e-ad04-9dad2d451d6e" InformativeScreenshot="b5c95d7bb75f570aa18eb60efc4deff4" Selector="&lt;html app='chrome.exe' title='*Kitalulus' /&gt;&lt;webctrl aaname='Akun' css-selector='*button' parentid='app-layout' tag='BUTTON' innertext='Akun' /&gt;" TimeoutMS="100000" WaitForReady="INTERACTIVE" />
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </Sequence>
+              </ActivityAction>
+            </ui:BrowserScope.Body>
+          </ui:BrowserScope>
+          <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Open Browser" />
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Page Kita Lulus&quot;]" />
+        </Sequence>
+        <FlowStep.Next>
+          <FlowDecision x:Name="__ReferenceID3" Condition="[pageKitalulus]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <av:Point x:Key="ShapeLocation">250.5,266.5</av:Point>
+                <av:Size x:Key="ShapeSize">79,87</av:Size>
+                <av:PointCollection x:Key="FalseConnector">329.5,310 390,310</av:PointCollection>
+                <av:PointCollection x:Key="TrueConnector">250.5,310 240,310 240,407 300,407 300,437</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <FlowDecision.True>
+              <FlowStep x:Name="__ReferenceID1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">200,437</av:Point>
+                    <av:Size x:Key="ShapeSize">200,66</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">300,503 300,533 290,533 290,556.5</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Search Vacancy" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Search Vacancy" />
+                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Info Lowongan Kerja Terbaru 2022 - Kitalulus" sap:VirtualizedContainerService.HintSize="434,1152" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" Version="V1">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,936" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="qa" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Quality Assurance'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,226" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[&quot;Quality&quot; + &quot; &quot; +&quot;Assurance[k(tab)]&quot;]" Timeout="120">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://kerja.kitalulus.com/id" DesignTimeRectangle="744, 209, 448, 36" ElementType="InputBox" FriendlyName="'Quality Assurance'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzyAccuracy="0.56" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='' aaname='' /&gt;" ImageBase64="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" InformativeScreenshot="0e1442bc861d0bb700b9ae063ede11f4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Kitalulus' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="Quality Assurance" />
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,258" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ClickType="Single" DisplayName="Click 'LokasiCari Provinsi/Kot…'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://kerja.kitalulus.com/id" DesignTimeRectangle="742, 259, 452, 34" FriendlyName="'LokasiCari Provinsi/Kot…'" FullSelectorArgument="&lt;webctrl parentid='app-layout' tag='DIV' innertext='Lokasi*' isleaf='0' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='app-layout' tag='DIV' innertext='Lokasi*' isleaf='0' type='' aaname='' check:text='Lokasi*' /&gt;" ImageBase64="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" InformativeScreenshot="62b77b5922fa791fcabeff9da4ccd061.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Info Lowongan Kerja Terbaru 2022 - Kitalulus' /&gt;" SearchSteps="FuzzySelector, Image" Text="LokasiCari Provinsi/Kota/Kabupaten" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='DIV' /&gt;" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
+                          <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_10" Key="enter" KeyModifiers="None" SpecialKey="True">
+                            <ui:SendHotkey.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e83a3363-f88e-4802-81cc-f0435bab64a7">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:SendHotkey.Target>
+                          </ui:SendHotkey>
+                          <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                          <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[popDialog]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                            <ui:UiElementExists.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="698fddd3-c6e3-410e-9bc9-c512168f0f0d" InformativeScreenshot="929019828757fc424e9e9da9bba5abaf" Selector="&lt;html app='chrome.exe' title='Info Lowongan Kerja Terbaru 2022 - Kitalulus' /&gt;&lt;webctrl parentid='__next' tag='P' innertext='Lokasi Cari Kerja' parentclass='dialog__Head-sc-*' /&gt;" TimeoutMS="100000">
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:UiElementExists.Target>
+                          </ui:UiElementExists>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Search Vacancy&quot;]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp BrowserType="Chrome" IconBase64="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" InformativeScreenshot="2b24cba2fc57e0159e9aa16e52e562cc.png" Selector="&lt;html app='chrome.exe' title='Info Lowongan Kerja Terbaru 2022 - Kitalulus'/&gt;" Url="https://kerja.kitalulus.com/*" />
+                    </uix:NApplicationCard.TargetApp>
+                  </uix:NApplicationCard>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,226" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="Quality Assurance">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ca1b3e0c-5b40-4d49-8017-c1255e87a92d" InformativeScreenshot="03ff4ec242357e2c2efff4354808e41a" Selector="&lt;html app='chrome.exe' title='Info Lowongan Kerja Terbaru 2022 - Kitalulus' /&gt;&lt;webctrl tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="722,784" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Lokasi Cari'" sap:VirtualizedContainerService.HintSize="680,692" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="30">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="376,466" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ClickType="Single" DisplayName="Click 'Pilih Provinsi'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://kerja.kitalulus.com/id" DesignTimeRectangle="774, 552, 388, 40" ElementType="InputBox" FriendlyName="'Pilih Provinsi'" FullSelectorArgument="&lt;webctrl parentid='element.label' tag='DIV' innertext='Pilih Provinsi' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='element.label' tag='DIV' innertext='Pilih Provinsi' type='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYYAAAAoCAYAAAD64V3PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVHhe7dlBbqpQFIDht/9FsAAXYFfgrHHoxAXQDZiYTu7joMA9Svu0dvDEz+RLUBDo5Pxc+6ecX4fDoez3+7Ldbsv7+zsALyBmfsz+aMDw6sMQH8TOtm3L8Xgsn5+fALyAmPkx+6MBQxz6MEQtYsfclwBYvmhAtGAMQ5TCSgHgdUUDogVjGOJ3prkDAXgd0QJhAGAkDAAkwgBAIgwAJMIAQCIMACTCAEAiDAAkwgBAIgwAJA+EYVfWTVOaS2+78/6Pslk1Zb07Hb97a8pq8/Ht9r/EsVfXa9ZlN3Psz+X7/pHdujSrTfmY2wfwn3s4DHmAfj1UvwrA3WEYw3PysVldfQbAz/1yGOpBf8+KYTOtPr4Z8nNhqJ/O+3OtulB05xlj027Kajh3tbqo7yFMganv+7z91l1j7v7i2jPntmIAntkvh6H+7PYwjEP1PMTzOSf9sRdhqD/rt9NAPt1PutawPw3vmRhU2+k7zaps2tgX5x62T2EZQyMMwBN7OAzTE/PJ9BR+RxjGYZ+/c6k/9vKa1QDO5+r0oame5Pv352F+tT0cdx2G6W+qY5DDkAgD8MR+ecVQuz0M0+C9IQwXK4ZaPlenf8KvwpCG+XSt/H+K6zBM93MRg/MK5zJQwgA8s2WH4bsVQ/d+CEJ8b7rmHWGopLgIA/DElh2G8z3W10oDe3zir1cVN4bhIjr+xwAsxcLD0Kl/7kkBCKfr5XPeGIbufb9KGM7tpyRgIR4IAwBLJAwAJMIAQCIMACTCAEAiDAAkwgBAIgwAJMIAQCIMACTCAEAiDAAkKQzb7bYcj8fZAwFYvmhAtGAMw36/L23bzh4MwPJFA6IFYxgOh0Nfithh5QDwOmLmx+yPBkQLxjDEKz6IWsTO+J0JgOWLmR+zf4hCKaX8BTeZokBOCAkLAAAAAElFTkSuQmCC" InformativeScreenshot="e0fd497e8d698f4c7bcd0f3b1b0bdf39.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Kitalulus' /&gt;" SearchSteps="FuzzySelector, Image" Text="Pilih Provinsi" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='DIV' /&gt;" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick ClickType="Single" DisplayName="Click 'Pilih Kota/Kabupaten'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://kerja.kitalulus.com/id" DesignTimeRectangle="774, 600, 388, 40" ElementType="InputBox" FriendlyName="'Pilih Kota/Kabupaten'" FullSelectorArgument="&lt;webctrl parentid='element.label' tag='DIV' innertext='Pilih Kota/Kabupaten' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='element.label' tag='DIV' innertext='Pilih Kota/Kabupaten' type='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYYAAAAoCAYAAAD64V3PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOwSURBVHhe7dpdjtowGIXh7n8RWQALgBXkDnGZGxYQNoCEuHH5/Bcfx0kHMdMW8iI9UiC2Y7vSd5JMf7n4uV6v7nw+u9Pp5I7HIwBgA6zmW+23DEgfHwz2g50cx9Hdbjd3v98BABtgNd9qv2VACgcfDJYWdqLVCQDw+SwDLAtyMFhS8KQAANtlGWBZkIPB3jO1GgIAtsOygGAAAGQEAwBAEAwAAEEwAAAEwQAAEAQDAEAQDAAAQTAAAATBAAAQBAMAQLwQDIPbd53raochnr+4fte5/RDaD4fO7frL6vGfWNtp/OK3buf6UdvWLv1u1nfVsI/twzrTOoK49l3vLmWfhmfW9x2eXicAVF4OBi2YGgalpQL5SjD4718ozubZgmljh3XU6wzfn5kzwQDgnXxzMJSF8Jknhj7cgZuVomZt03lfABuh4NvEsXJBtrv/2fjxrn/2u7G5p6eQcp1hTfNCvzzW2vrKfWjv19K+hLb5emkfmuvUttO/V7zeodUHwJZ9czDMi6gWunYwdN3eDdZ/7N1uNubEt30ULx8KqU9Bfq/G0jvpMLdclH3b4nWUfc+hk9YUC+yseK6PFdbXChndh9Z+rfWb5qHn6icGaeuDI40Z1yOhUuwBgM16ORjy3Wa0VujKMCiP64Kd+tR823yteTCU4+b2cey6YCpby1QUre00TrXOxTESHUvXp/PQ+TaCYaGf0n7aTkND24ZjXSfBAOAHXiVN5oWuDIPWcd2n5otlDAR/LK+S6kKnRXJWWMvXLp4W82kOMRh833BcXuMrYy3NaW3ta/3S01B5zdSvFQxlOxPGrfeaYAAQvF8w5KI3D4K6mJbtWwWzXRTtuHwaqdrWr51Wx6rnrN91vjrOcr963bpn83UuFft6r9faAtiSNw6Gh3jnLEXxS39j0LmHfrEo2t1/eY3GOuU6a2M9vvs5L7T156o/HMu5Zr8qGKp+us5qz2RPCAYAbe8dDA+hEOt19JVJbJte98T+qV9oN+Tr2u/Sr7nOMM9UuJfGsrZhfdP/LmqN7fse+nm/wz6/MmquxfcbdA+rdU5zrcchGAC0vRAM+ElS7AHgLyIY/lMEA4B/hWAAAAiCAQAgCAYAgCAYAACCYAAACIIBACAIBgCAIBgAAIJgAAAIggEAICQYTqeTu91uzYYAgM9nGWBZkIPhfD67cRybjQEAn88ywLIgB8P1evVJYSd4cgCA7bCab7XfMsCyIAeDfewHSws7ae+ZAACfz2q+1f4UCs459xso/fCIlQlMrwAAAABJRU5ErkJggg==" InformativeScreenshot="4c6eeacb466ec6ec604e6ebc5539e5cc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Kitalulus' /&gt;" SearchSteps="FuzzySelector, Image" Text="Pilih Kota/Kabupaten" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='DIV' /&gt;" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="https://kerja.kitalulus.com/id" DesignTimeRectangle="758, 392, 420, 344" FriendlyName="'Lokasi Cari'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' innertext='Lokasi Cari Kerja*' /&gt;" FuzzySelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' innertext='Lokasi Cari Kerja*' type='' aaname='' check:text='Lokasi Cari KerjaSaat ini KitaLulus hanya menyediakan lowongan pekerjaan di daerah tertentu sesuai' /&gt;" ImageBase64="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" InformativeScreenshot="a3a4cd526a7686d79e61b1d1d2a2dea4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Kitalulus' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="Lokasi Cari KerjaSaat ini KitaLulus hanya menyediakan lowongan pekerjaan di daerah tertentu sesuai" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='DIV' /&gt;" />
+                          </uix:NCheckState.Target>
+                        </uix:NCheckState>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb9fa70f-705d-474f-8597-fc547168fcb0" InformativeScreenshot="3b13b051c17002d2173e165e2bc19e5f" Selector="&lt;html app='chrome.exe' title='Info Lowongan Kerja Terbaru 2022 - Kitalulus' /&gt;&lt;webctrl parentid='app-layout' tag='DIV' innertext='LokasiJAKARTA PUSAT, DKI JAKARTA' class='Search__Location*' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:Click.Target>
+                        </ui:Click>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                </Sequence>
+                <FlowStep.Next>
+                  <FlowDecision x:Name="__ReferenceID6" Condition="[popDialog]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <av:Point x:Key="ShapeLocation">250.5,556.5</av:Point>
+                        <av:Size x:Key="ShapeSize">79,87</av:Size>
+                        <av:PointCollection x:Key="FalseConnector">329.5,600 390,600</av:PointCollection>
+                        <av:PointCollection x:Key="TrueConnector">250.5,600 240,600 240,647 300,647 300,677</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <FlowDecision.True>
+                      <FlowStep x:Name="__ReferenceID5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">200,677</av:Point>
+                            <av:Size x:Key="ShapeSize">200,66</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">300,743 300,793</av:PointCollection>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Sequence DisplayName="Choose Location" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="prv" />
+                            <Variable x:TypeArguments="x:String" Name="kabKota" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="Pilih Lokasi" />
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Info Lowongan Kerja Terbaru 2022 - Kitalulus" sap:VirtualizedContainerService.HintSize="434,476" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" OpenMode="Never" Version="V1">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,260" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ClickType="Single" DisplayName="Click 'Lokasi Cari Kerja'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://kerja.kitalulus.com/id" DesignTimeRectangle="772, 420, 392, 24" ElementType="Text" FriendlyName="'Lokasi Cari Kerja'" FullSelectorArgument="&lt;webctrl tag='P' aaname='Lokasi Cari Kerja' innertext='Lokasi Cari Kerja' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' aaname='Lokasi Cari Kerja' innertext='Lokasi Cari Kerja' type='' check:text='Lokasi*' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYgAAAAYCAYAAADgUmrRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANQSURBVHhe7ZxrjtowFEa7NtaThcC/QYLfwAZGLGTENrIMFwe/ff1IyKgKPUeyKohz4zid78SuOn8UAACAAIIAAAARBAEAACIIAgAARBAEAACIIAgAABBBEAAAG2McR3W73cynMufzeeq7FAQBVR5fO7Xb7dTxx3yxkLXqFBnvanjW3w131fpxGL+HaSy+HdXDHHuPhzq26hXG6cc0qPvyn+eJX59r+Ofo4NfP+HA4mG9y9DHd53K5mG/mgyCgymYE0YkdR97eD+YuBEGsKQf4f9jv99PfG0kSVg66zzsgCKjSHew/RxNyrzZ8x0kX1xnVfUj7+e/kGvnxaEw9Kwg3xvANP6j7Fbz3J/eTrgrc/XyFNeevIFpyiIUW17XnDs8xTDVNjfyZteYWtookibXkoEEQUKVLEFmYmhYEbljHhZ5wPG4+NFvHewRRvBd9bnierZW22ninY/ME8ZglB9OCcWZbZeZYep/NuYNNE0piTTloEARUKYaqw7+d+j42KPOAHwYTapUg18ghVwm1piDsOCvhXUKo7UI3XHXMEUTS8jd6U0sQgp0TJ4jknlvPrHUctoeVhG5ryUGDIKBKM0wKwZyGmQtU26Jg9aRvxe66jS2ffkHMeXO2gW+aIIh4XuYK4tnPfU7GVRCJblYmdq5SuZSeWXFuYfPYlYNu4XbTuyAIqNJ+28zfdDVlQQzPVcTrzzAQ0+vMDrmmICr3Mp0bhHpaS6gt15ojCN/H3VM4dtdPaEauvYLonVvYJuG2UrjdtAYIAqq0w2TeFtPUx64G3CoiDVapZkJaQwjxDLcKCQPcX8uemwWvPW9NQUTjtOcJc1i5nz5BLJhb2AzSvzmsKQkEAVVs2EjNBUy2/WNasI0Uh1a63eMDMm1x/9Jx3aVDEJU6oczSVYprvyaI8Jr+XHnu83H2CSJv8dhha0hysKwlCQQBVboEoUkk0dwXt0FpJRKer8MzPS6Ee3SNLkG8yAWQBnp8LT3m1/gLKyLHckFE1xTEGo7F0ieIJ825ha1xvV6n5ynJwWIlof9T3VIQBMCHkcoMPg/96zNOp5P5VEaLhF+1AQB+dTI1BAHvgyAAPoVwK4ntI1gBBAEAACIIAgAARBAEAACIIAgAABBQ6i9CHh4APCHGaAAAAABJRU5ErkJggg==" InformativeScreenshot="4f20d90c1ed5475900ce160361ccbdbb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Kitalulus' /&gt;" SearchSteps="FuzzySelector, Image" Text="Lokasi Cari Kerja" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='P' /&gt;" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp BrowserType="Chrome" IconBase64="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" InformativeScreenshot="57407a3602597a13ed9ab91486e678b2.png" Selector="&lt;html app='chrome.exe' title='Info Lowongan Kerja Terbaru 2022 - Kitalulus'/&gt;" Url="https://kerja.kitalulus.com/*" />
+                            </uix:NApplicationCard.TargetApp>
+                          </uix:NApplicationCard>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'P'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5d85aade-de78-4842-8680-a7568f68dad7" InformativeScreenshot="929019828757fc424e9e9da9bba5abaf" Selector="&lt;html app='chrome.exe' title='Info Loker *' /&gt;&lt;webctrl parentid='__next' tag='P' aaname='Lokasi Cari Kerja' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:Click.Target>
+                                </ui:Click>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="tab" KeyModifiers="None" SpecialKey="True">
+                            <ui:SendHotkey.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a7912530-647c-44ad-9f68-7eb857fbaf24">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:SendHotkey.Target>
+                          </ui:SendHotkey>
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="tab" KeyModifiers="None" SpecialKey="True">
+                            <ui:SendHotkey.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a7912530-647c-44ad-9f68-7eb857fbaf24">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:SendHotkey.Target>
+                          </ui:SendHotkey>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[prv]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">DKI JAKARTA</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[prv]" />
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="v" KeyModifiers="Ctrl" SpecialKey="False">
+                            <ui:SendHotkey.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a7912530-647c-44ad-9f68-7eb857fbaf24">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:SendHotkey.Target>
+                          </ui:SendHotkey>
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="enter" KeyModifiers="None" SpecialKey="True">
+                            <ui:SendHotkey.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a7912530-647c-44ad-9f68-7eb857fbaf24">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:SendHotkey.Target>
+                          </ui:SendHotkey>
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="tab" KeyModifiers="None" SpecialKey="True">
+                            <ui:SendHotkey.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a7912530-647c-44ad-9f68-7eb857fbaf24">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:SendHotkey.Target>
+                          </ui:SendHotkey>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[kabKota]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">JAKARTA PUSAT</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="SetToClipboard_2" Text="[kabKota]" />
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="v" KeyModifiers="Ctrl" SpecialKey="False">
+                            <ui:SendHotkey.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a7912530-647c-44ad-9f68-7eb857fbaf24">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:SendHotkey.Target>
+                          </ui:SendHotkey>
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="SendHotkey_7" Key="enter" KeyModifiers="None" SpecialKey="True">
+                            <ui:SendHotkey.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a7912530-647c-44ad-9f68-7eb857fbaf24">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:SendHotkey.Target>
+                          </ui:SendHotkey>
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="tab" KeyModifiers="None" SpecialKey="True">
+                            <ui:SendHotkey.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a7912530-647c-44ad-9f68-7eb857fbaf24">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:SendHotkey.Target>
+                          </ui:SendHotkey>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="418,638" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Sequence sap:VirtualizedContainerService.HintSize="376,546" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                    <ui:Click.CursorPosition>
+                                      <ui:CursorPosition Position="Center">
+                                        <ui:CursorPosition.OffsetX>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:CursorPosition.OffsetX>
+                                        <ui:CursorPosition.OffsetY>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:CursorPosition.OffsetY>
+                                      </ui:CursorPosition>
+                                    </ui:Click.CursorPosition>
+                                    <ui:Click.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c28e61d8-70dc-4dd1-a528-738cca73206a" InformativeScreenshot="b7cffdca08f3071b62c10a4e190f27f6" Selector="&lt;html app='chrome.exe' title='Info Loker BALI | Karir &amp;amp; Lowongan Kerja di BALI Terbaru - Kitalulus' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='element.label' tag='DIV' /&gt;">
+                                        <ui:Target.TimeoutMS>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:Target.TimeoutMS>
+                                        <ui:Target.WaitForReady>
+                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                        </ui:Target.WaitForReady>
+                                      </ui:Target>
+                                    </ui:Click.Target>
+                                  </ui:Click>
+                                  <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'Provinsi'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SimulateType="True" Text="DKI JAKARTA">
+                                    <ui:TypeInto.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="75259e56-e320-40eb-b5cf-9474aad2018f" InformativeScreenshot="33a9485f20fa21b7aaf850d4e8a775c8" Selector="&lt;html app='chrome.exe' title='Info Loker BALI | Karir &amp;amp; Lowongan Kerja di BALI Terbaru - Kitalulus' /&gt;&lt;webctrl idx='2' parentid='element.label' tag='DIV' /&gt;">
+                                        <ui:Target.TimeoutMS>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:Target.TimeoutMS>
+                                        <ui:Target.WaitForReady>
+                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                        </ui:Target.WaitForReady>
+                                      </ui:Target>
+                                    </ui:TypeInto.Target>
+                                  </ui:TypeInto>
+                                  <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'Kota/Kab'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="JAKARTA PUSAT">
+                                    <ui:TypeInto.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="75259e56-e320-40eb-b5cf-9474aad2018f" InformativeScreenshot="a189c2314a457227410bc9fe7ff5dad2" Selector="&lt;html app='chrome.exe' title='Info Lowongan Kerja Terbaru 2022 - Kitalulus' /&gt;&lt;webctrl tag='DIV' innertext='Pilih Kota/Kabupaten' idx='*' /&gt;">
+                                        <ui:Target.TimeoutMS>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:Target.TimeoutMS>
+                                        <ui:Target.WaitForReady>
+                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                        </ui:Target.WaitForReady>
+                                      </ui:Target>
+                                    </ui:TypeInto.Target>
+                                  </ui:TypeInto>
+                                </Sequence>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                            <ui:Click.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1329dda5-de51-4820-8031-d33707584c79" InformativeScreenshot="dc59286d6e2323c30193c989fd1c505b" Selector="&lt;html app='chrome.exe' title='Info Lowongan Kerja Terbaru 2022 - Kitalulus' /&gt;&lt;webctrl tag='BUTTON' innertext='Konfirmasi' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:Click.Target>
+                          </ui:Click>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;&quot;]" />
+                        </Sequence>
+                        <FlowStep.Next>
+                          <FlowStep x:Name="__ReferenceID2">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">200,793</av:Point>
+                                <av:Size x:Key="ShapeSize">200,66</av:Size>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="Get Job" sap:VirtualizedContainerService.HintSize="518,865" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Sequence sap:VirtualizedContainerService.HintSize="476,773" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Info Loker JAKARTA PUSAT | Karir &amp; Lowongan Kerja di JAKARTA PUSAT Terbaru - Kit" sap:VirtualizedContainerService.HintSize="434,681" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" Version="V1">
+                                  <uix:NApplicationCard.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,465" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ClickType="Single" DisplayName="Click 'Corporate Quality'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://kerja.kitalulus.com/id/lowongan/kota/jakarta-pusat?keyword=Quality+Assurance" DesignTimeRectangle="737, 404, 257, 20" ElementType="Text" FriendlyName="'Corporate Quality'" FullSelectorArgument="&lt;webctrl aaname='Corporate Quality Assurance Officer' parentid='app-layout' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Corporate Quality Assurance Officer' parentid='app-layout' tag='P' type='' check:text='Corporate Quality Assurance Officer' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQUAAAAYCAYAAADzqehgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAToSURBVHhe7ZpBbhw5DEXnJD6ez5K1N7mCl977DAZ8icCwEcCLHKCm1CVSJP+n1D3pGEEPH0BgUpIo8pOinZn5ZyuKojDUUCiKwlFDoSgKRw2FoigcNRSKonDUUCiKwlFDoSgKBwyFj+e37e7bD2Pv20tfuw1+bU/f37ant/7H3wC1+rE9vPbFq/K5PYRavDyS+17ft7vHz/6H30P83327jlb/J4Z2cw1d/3z/uX2wb28/t3uz/hW4oYDJiN1KY7SBcI18xA+3++dffd+1wKEAtIHQ9lxlKMh9fyqfW+WSvpC9tqbs29czhoI0FQ1yt9BsfoDERzaa+EH2tfNm6j2Z89h0UdwgkvrZ/fd94gN+euuExYKNe/0jWD4s1Srkzb6TSS8x2p/yedyNxW8Keq9Y28cGCfuGSCz3j++Tn1JBM+gB1JvlO2qADwLi0Dtmtdw5u88WdRc/3fC8Z9TQ64vfo3bN9wf5tt9H+qcxfDaL2sf3yeNBXQ90KLgms7SgQkDZbxTjLCZ9Wgsiw/oJLPhh5KHFNXgchx3FzBoJYx1rnFSrHRVczpOiyh49P427ITGO4q6HAolT9k2HnujUNLX/3JdPZDXC+LwNP6CT+hw+fOPv1jVc+c77zObB667aJD5YzQ8yrQ4k5qznLhkKoMvJxr1Un9n58L77UMCCpKhYZq80mzofSTsR9Sw2hxYDfJE9xA8FHgEpXN8za07PvPgaW4yV5JM2GMS9GAoNOLMTcoMzjBCvxDr0aaz75bgrrw/6RZ9a99C0EcgL+kN8jz3QU0FjrFFfT2PBGjmgz9h+8g36R/YMbb2WGGfMZaVrGAp5EQUfgBALmggUH8wJnwRv3JAoeWgObYpueh/mqQKBZVostIo5klhjkZQ0btTzrKHgdIs14kB9E61Bt1gLiUfN34t9hPHhHk+MQbU4Q/PVgJR1tEy/pOeFaw2FpB5K7CFjcvdK1/P++mCDhOQaFw4Fl5BtXCzegd+TChMfBjyUS4bCumF0/XTPkas202Qo8PPmDMSNei59dI59e76vPY6w7hF9uDE9NN+T4aDMHi42JuaYNW/MHbQgmse+gjMBn5e1//bDQvzN8qXfYi5Z7wuyzqzXPtNVOP9fNMag7D45q4GyhHf0LHmU8UGQguqeRJhYaDjHCtfvywSiqFbDT2wi9Qd6iTZ5g2LcqGc8ozHpmY7GGvYzwl6w6NuwarQYX1p3kyP3GbUYPaq5kf4QX6Cx7vG9Efefg/oMfT++24HB3gj5Brlg/3ht+3p4GxaJZz0U7AAAs8ngAxAbArKEd/SBoI2zWRwmhsVQANNmDr6tiNEmos61asYKjSY5r+NGPdOhcDLWfP48Q3xCs0wGmze5N9eHx2ttxMibd63nOUMh9SOaZ72qNWHM+2I+3Brk2yQXb6PmvJ/G+gVD4QAv5I3kL7ZN2GAJ75gEr/OfJOPDtYVuMYkfc942Izw6MZ5zhBeHnLd37jG/TBuUxY16wlBwmvl6aK2mDS13xFo2hu/ZoxprjVhDrLPtofvnT6hV2rxBT/0ffOKDJg/JxxhyiP0kfrL1BHyUTFOsKf2W9HrsPZ8XxmDXU107MBT+KOljvi1Oov9FOeIAKYqcGgo3D/uJVBQ5NRRuGPsrZv2WUJzL1w6Foij+emooFEXhqKFQFIWjhkJRFIZt+xfvPskbu/6qyQAAAABJRU5ErkJggg==" InformativeScreenshot="6530961e7b59ca87881dfcca4f681bc7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Info Loker JAKARTA PUSAT | Karir &amp;amp; Lowongan Kerja di JAKARTA PUSAT Terbaru - Kitalulus' /&gt;" SearchSteps="FuzzySelector, Image" Text="Corporate Quality Assurance Officer" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='P' type='' /&gt;">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target DesignTimeRectangle="754, 286, 32, 16" ElementType="Text" FriendlyName="'Filter'" FullSelectorArgument="&lt;webctrl aaname='Filter' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Filter' tag='P' type='' check:text='Filter' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAUCAYAAADlep81AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC0SURBVEhL7ZPRDYUwCEWdrfMwTLuI6SCmazgGtjxKnsQUjRr70ZsQBbzkFHXCzjSALA0gSwK0zoDOORWAcaUuRsg5xHxX0oiQ+zBTRkq+PntPCujkUAV0yWvoJFBjQ0vgbf4iLGRQ9YCJy+L1ga4yk3UfqKTau+sfezVIVfsb8vVc14COc96S8mq9sqHk/w4lwf0vgJqzvgDa99terUeAal5ejdSsv8wC6kUDyNIAstQZEOIGEAlX7YnkFhYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" Text="Filter" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='P' type='' /&gt;" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <uix:NClick ClickType="Single" DisplayName="Click 'Detail Pekerjaan'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://kerja.kitalulus.com/id/lowongan/detail/corporate-quality-assurance-officer-3idu" DesignTimeRectangle="1159, 266, 24, 21" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='bookmark default' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='bookmark default' tag='IMG' type='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGDSURBVEhLzZWhkoMwEEDvp5FUIkFSiQRZiwRJZWVtLbJ2bx7HZkIICW2Zzr2ZTKdNum8TdsOPfJn/IRzHUZqmkSzLJEmSaVRVJdfrdV4h8nw+pe97OZ/PZvCf+/0+r/CzErZtayS+URSFDMMgp9PJO89ATkI+FkJbVpal3G63abdkzVyapovAeZ5PcuZZe7lczBoS80mNkMAaiCA+Ho+HCVjX9fzrEnsNCbgYIQFCgRQSYzch2LEmz3obI9QCiT30vXDcxOu6bv7lDyPUjI5C64FPGyPUcz9qhzy/oJA+8y14F31EbgEaIRMsoL+2emgvVCqxGJtFA5rVp7ukh4njq/iFkHLXzMjyHahKjeHuDhZC0Gf5ztHa/ee2g7ISItEe2rqefHAier+GLo+VEDiK2J1oY8tINrTeKwT7TgxJX5HBphBiUvs1tUcGQSG4Ur6D9i2DQtsjg6gQkGiPsiOtZEbs7eKySwjsQKtXx1bph9gtBKTsjiPeeknHeEl4BF8WivwCmZYR5Tk+LkQAAAAASUVORK5CYII=" InformativeScreenshot="0e8dd9558e69ec40b47477bc6633ed57.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Info Lowongan Corporate Quality Assurance Officer di PT Prima Hotel Indonesia area Jakarta Pusat | Kitalulus' /&gt;" SearchSteps="FuzzySelector, Image">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target DesignTimeRectangle="778, 208, 131, 24" ElementType="Text" FriendlyName="'Detail Pekerjaan'" FullSelectorArgument="&lt;webctrl idx='1' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='P' aaname='Detail Pekerjaan' check:text='Detail Pekerjaan' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIcAAAAcCAYAAABLRqyKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKqSURBVGhD7ZbdkYMwDISvttRDMaGRGwrJpA3K8GGCZUleGZuEHA/aGb2Af6TVZ8NPcLkMORwuUw6Hy5TD4TLlcLhMORwuUw6HyxTBMf8O4Xa74RimMG/jjiiuPfz2rvAM47b/+NgewWdIeRyK/lyYP296UdU8hWHNcQjTaZu0qw2ONcbF8n4976/5V4IjRm8+DgcqnhJe4t6Px3E4kPrh0ONSPr1N/gocF9M+HFGP8fWuuD3UCRVz5zAN7N0a/ESA9wI+1OD34bBq0Tennlf6w/JXh4YAXKO8Bej9fcz+xTXMm2PPq01UWwq5jqhBjMU3VRscyGx+o4hIptfgQO9ekW+Yc+BAN4dsZg5+20l/WP7CL7sungfab90LwtHi1aICjBT5EOgDIKP8bWiEIyeYikwF8gRbn5EJqEF0Ij4DhxU0nxrCzAHPuD8TNVcZmhrEPQTPMhzqxCI4mrzKz8q68locDhrHoNKeHoRjx3yQtICDSxN/OhyyIfXThI1NoXPITUeRQULNXYXg4DK94tI3DahB9Nj29OBnpWb+EoByCUdl/ofhqI/DTeeR5sNxyqs6HLlJfXC0eFWr42w4KOlEf7v5CI5cSM0wtEfrvu35Vetm4uaPj/IzG2U2XakHjl6v6Fltrc/BATZeRAnS+GwY+ueAc2vFwaTtQqRaxy0iE9lYur7xP8daHRiTn9Ub0gPH2yB8FA4z1M8XM7U2jorbIiZQ3evbcCzSOaaAt131MOjvfQ6eRw8cvV6VcTYcuoikAhAF0CqZeEpANCSuT2ulNVDSrU1vHZelAZH/SIaxRc5RJSA6hx44ova9WiR68Zqf5qVaDsPhuoAMOP5LDsdFJG8udAN/Xw7HJSQ/Ra2fwrPlcLhMORwuUw6Hy5TD4TLlcLhMORwuQyH8AXnuUHGaFm3BAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" Text="Detail Pekerjaan" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='P' /&gt;" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </uix:NApplicationCard.Body>
+                                  <uix:NApplicationCard.TargetApp>
+                                    <uix:TargetApp BrowserType="Chrome" IconBase64="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" InformativeScreenshot="0c2c89dc4143b4bee68da8b65e1f0d17.png" Selector="&lt;html app='chrome.exe' title='Info Loker JAKARTA PUSAT | Karir &amp;amp; Lowongan Kerja di JAKARTA PUSAT Terbaru - Kitalulus'/&gt;" Url="https://kerja.kitalulus.com/id/lowongan/*" />
+                                  </uix:NApplicationCard.TargetApp>
+                                </uix:NApplicationCard>
+                              </Sequence>
+                            </Sequence>
+                          </FlowStep>
+                        </FlowStep.Next>
+                      </FlowStep>
+                    </FlowDecision.True>
+                    <FlowDecision.False>
+                      <FlowStep x:Name="__ReferenceID7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">390,589</av:Point>
+                            <av:Size x:Key="ShapeSize">200,22</av:Size>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" Reason="Pop up Dialog Box Tidak Muncul">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </TerminateWorkflow>
+                      </FlowStep>
+                    </FlowDecision.False>
+                  </FlowDecision>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowDecision.True>
+            <FlowDecision.False>
+              <FlowStep x:Name="__ReferenceID4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">390,299</av:Point>
+                    <av:Size x:Key="ShapeSize">200,22</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">490,299 490,180 400,180</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Delay>
+                <FlowStep.Next>
+                  <x:Reference>__ReferenceID0</x:Reference>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowDecision.False>
+          </FlowDecision>
+        </FlowStep.Next>
+      </FlowStep>
+      <x:Reference>__ReferenceID1</x:Reference>
+      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
+      <x:Reference>__ReferenceID6</x:Reference>
+      <x:Reference>__ReferenceID7</x:Reference>
+      <FlowStep x:Name="__ReferenceID8">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">400,47</av:Point>
+            <av:Size x:Key="ShapeSize">200,66</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">500,113 500,143 300,143 300,147</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,215" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" NewSession="False" Url="https://kerja.kitalulus.com">
+            <ui:OpenBrowser.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
+                </Sequence>
+              </ActivityAction>
+            </ui:OpenBrowser.Body>
+          </ui:OpenBrowser>
+        </Sequence>
+        <FlowStep.Next>
+          <x:Reference>__ReferenceID0</x:Reference>
+        </FlowStep.Next>
+      </FlowStep>
+    </Flowchart>
+  </Sequence>
+</Activity>
